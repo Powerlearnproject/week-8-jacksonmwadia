@@ -1,0 +1,46 @@
+Users
+-----
+user_id (PK)
+username
+email
+password
+created_at
+updated_at
+
+Expenses
+-------------
+expense_id (PK)
+user_id (FK)
+category_id (FK)
+amount
+date
+description
+created_at
+updated_at
+
+Categories
+-------
+category_id (PK)
+user_id (FK)
+category_name
+created_at
+updated_at
+
+Payment Methods
+------------
+payment_method_id (PK)
+user_id (FK)
+payment_method_name
+created_at
+updated_at
+
+Budgets
+-------
+budget_id (PK)
+user_id (FK)
+category_id (FK)
+amount
+start_date
+end_date
+created_at
+updated_at
